@@ -8,7 +8,7 @@ __Technology Stack:__
 
 _Front-end:_ &nbsp;&nbsp;Bootstrap 3(HTML & CSS)
 
-_Back-end:_ &nbsp;&nbsp;Django2.0 (Python3.5.2)
+_Back-end:_ &nbsp;&nbsp;Django1.11 (Python3.5.2)
 
 _Database:_ &nbsp;&nbsp;dbsqlite3
 
