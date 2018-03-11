@@ -14,6 +14,7 @@ from django.contrib.auth.views import(
 urlpatterns = [
     url(r'^items/', include('menus.urls')),
     url(r'^restaurant/', include('restaurants.urls')),
+    url(r'^users/', include('profiles.urls')),
     
     url(r'^password_reset/$', password_reset, name='password_reset'),
     url(r'^password_reset/done/$', password_reset_done, name='password_reset_done'),
@@ -22,7 +23,6 @@ urlpatterns = [
 
     url(r'^admin/', admin.site.urls),
     url(r'^$', TemplateView.as_view(template_name='home.html'), name='home'),
-    url(r'^about/$', TemplateView.as_view(template_name='about.html'), name='about'),
     url(r'^login/$', LoginView.as_view(), name='login'),
     
 ]

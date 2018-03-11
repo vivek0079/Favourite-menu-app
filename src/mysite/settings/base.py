@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     
     # User Defined Apps
     'menus',
+    'profiles',
     'restaurants',
 ]
 
