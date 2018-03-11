@@ -1,0 +1,18 @@
+{% extends "base.html" %} 
+
+{% block title %} {{ title }} | {{ block.super }} {% endblock title %} 
+
+{% block content %}
+<h1>{{ title }}</h1>
+
+{% if form.errors.non_field.errors %}
+
+{{ form.errors.non_field.errors }} 
+
+{% endif %}
+
+<form action="." method="post">{% csrf_token %} {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
+{% endblock content %}
