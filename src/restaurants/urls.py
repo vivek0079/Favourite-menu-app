@@ -1,7 +1,6 @@
 from django.conf.urls import url
 
 from .views import (
-    restaurant_createview,
     RestaurantListView,
     RestaurantDetailView,
     RestaurantCreateView
