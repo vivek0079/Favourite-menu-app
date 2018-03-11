@@ -1,0 +1,6 @@
+{% if form.errors.non_field.errors %} {{ form.errors.non_field.errors }} {% endif %}
+
+<form action="." method="post">{% csrf_token %} {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Save</button>
+
+</form>
