@@ -9,7 +9,7 @@ from django.contrib.auth.views import(
     password_reset_confirm,
     password_reset_complete
 )
-
+from profiles.views import ProfileFollow
  
 urlpatterns = [
     url(r'^items/', include('menus.urls')),
@@ -24,5 +24,6 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', TemplateView.as_view(template_name='home.html'), name='home'),
     url(r'^login/$', LoginView.as_view(), name='login'),
+    url(r'^follow/$', ProfileFollow.as_view(), name='follow'),
     
 ]
