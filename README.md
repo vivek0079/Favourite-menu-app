@@ -20,7 +20,7 @@ __Instructions:__
   
   3.Make the migrations to create the database by `python3 manage.py makemigrations` followed by `python3 manage.py migrate`
   
-  4.To run the application open terminal and change directory to the manage.py in the Blog-app/mysite folder.Now run the command `python3 mange.py` runserver and the app goes live in your machine.
+  4.To run the application open terminal and change directory to the manage.py in the Blog-app/mysite folder.Now run the command `python3 mange.py runserver` and the app goes live in your machine.
   
 __Note:__
 

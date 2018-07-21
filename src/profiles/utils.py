@@ -13,4 +13,4 @@ def code_generator(size=SHORTCODE_MIN, chars=string.ascii_lowercase + string.dig
     # for _ in range(size):
     #     new_code += random.choice(chars)
     # return new_code
-return ''.join(random.choice(chars) for _ in range(size))
+    return ''.join(random.choice(chars) for _ in range(size))
